@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body 
+{
+color: #378ad3;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    position: relative;
+    font-size: 35px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight is ease forwards;
+}
+.navbar a
+{
+    /* display: flow-root; */
+    font-size: 23;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left:35px ;
+    font-weight: 500;
+    transition: .3s;
+
+}
+.navbar a:hover
+{
+    color: hsl(208, 78%, 73%);
+}
+.home
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(\iii.jpg) no-repeat;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+
+    align-items: center;
+    padding: 70px 10% 0px;
+}
+.home-content
+{
+
+    max-width: 600px;
+}
+
+.h3
+{
+    font: size 32px; 
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+}
+
+.h1 
+{
+    font-size: 45px;
+    font-weight: 700;
+    margin: -3px 0;
+    color: #ffffff;
+}
+#p{
+    font: size 35px;
+}
+.home-sci a {
+
+    display: inline-flex;
+  
+    justify-content: center;
+    
+    align-items: center;
+    
+    width: 40px;
+    
+    height: 40px;
+   
+    background: transparent;
+    border: 2px solid #0ef;
+     border-radius: 50%;
+        font-size: 20px;
+    
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+.home-sci a:hover {
+    color: #081629;
+    background:#0ef;
+    box-shadow: 0 0 20px #Bef;
+    }
+    
+    
+    
+    .btn-box{   
+    
+    display: inline-block;
+    padding: 12px 28px;
+     background:cyan;
+    
+    border-radius: 40px;
+    
+    font-size: 16px;
+    
+    color:#881629;
+    letter-spacing:T1px;
+    
+     text-decoration: none;
+    
+    font-weight: 600;
+   
+    }
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan;
+    
+}
+.text
+{
+    color: #0ef;
+}
+@keyframes slideRight {
+0%{        transform: translate(-100px);
+        opacity: 0;
+    }
+    100%{        transform: translate(0px);
+        opacity: 1;
+    }
+
+}
